@@ -1,5 +1,7 @@
 import { Link } from "react-router";
 import { Mail, Facebook, Instagram, Twitter } from "lucide-react";
+// UNCOMMENT AFTER ADDING logo.jpg to /src/assets/images/
+ import logo from "../../assets/images/logo.jpg";
 
 export function Footer() {
   return (
@@ -8,6 +10,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
+              {/* UNCOMMENT AFTER ADDING logo.jpg to /src/assets/images/ */}
+              <img src={logo} alt="Neelmonilata (NEEL) House" className="h-20 w-auto object-contain" />
               <span className="text-2xl text-white">Neelmonilata (NEEL) House</span>
             </div>
             <p className="text-sm mb-4">
