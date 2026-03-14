@@ -1,4 +1,6 @@
 import { ImageWithFallback } from "../figma/ImageWithFallback";
+// UNCOMMENT AFTER ADDING Rabindranath_tagore.jpg to /src/assets/images/
+// import rabindranathTagoreImage from "../../assets/images/Rabindranath_tagore.jpg";
 
 export function About() {
   return (
@@ -150,6 +152,38 @@ export function About() {
                     life-enriching programs to diverse populations across the United States.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* About Rabindranath Tagore Section */}
+          <div className="mt-20">
+            <h2 className="text-3xl mb-8 text-center text-gray-900">About Rabindranath Tagore</h2>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                {/* UNCOMMENT AFTER ADDING Rabindranath_tagore.jpg to /src/assets/images/ */}
+                {/* <img src={rabindranathTagoreImage} alt="Rabindranath Tagore" className="w-full h-[500px] object-cover rounded-lg shadow-lg" /> */}
+                <ImageWithFallback
+                  src="https://images.unsplash.com/photo-1764176269321-6d14f4af09c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Rabindranath Tagore - Nobel Laureate"
+                  className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+                />
+              </div>
+              <div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Rabindranath Tagore (1861-1941) was a Bengali polymath who reshaped literature and music
+                  of the Indian subcontinent with Contextual Modernism. He became in 1913 the first
+                  non-European to win the Nobel Prize in Literature.
+                </p>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  Tagore's poetic songs were viewed as spiritual and mercurial; however, his "elegant prose
+                  and magical poetry" remain largely unknown outside Bengal. He composed over 2,000 songs,
+                  now known as Rabindra Sangeet, which form an integral part of Bengali culture.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  His legacy continues to inspire people around the world, bridging cultures and promoting
+                  universal values of humanism, creativity, and emotional expression through the arts.
+                </p>
               </div>
             </div>
           </div>

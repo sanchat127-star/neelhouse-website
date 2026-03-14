@@ -1,6 +1,16 @@
 import { Link } from "react-router";
 import { Music, Palette, Heart, Brain, Users, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
+// UNCOMMENT AFTER ADDING home.jpg to /src/assets/images/
+import homeImage from "../../assets/images/home.jpg";
+// UNCOMMENT AFTER ADDING cognitive_enrichment.jpg to /src/assets/images/
+import cognitiveEnrichmentImage from "../../assets/images/cognitive_enrichment.jpg";
+// UNCOMMENT AFTER ADDING musical_heritage.jpg to /src/assets/images/
+ import musicalHeritageImage from "../../assets/images/musical_heritage.jpg";
+// UNCOMMENT AFTER ADDING vibrational_sound.jpg to /src/assets/images/
+ import vibrationalSoundImage from "../../assets/images/vibrational_sound.jpg";
+// UNCOMMENT AFTER ADDING ai_enhanced.jpg to /src/assets/images/
+import aiEnhancedImage from "../../assets/images/ai_enhanced.jpg";
 
 export function Home() {
   return (
@@ -8,6 +18,8 @@ export function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px] bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="absolute inset-0">
+          {/* UNCOMMENT AFTER ADDING home.jpg to /src/assets/images/ */}
+           <img src={homeImage} alt="Where culture meets wellness" className="w-full h-full object-cover" /> 
           <img
             src="https://images.unsplash.com/photo-1764176269321-6d14f4af09c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Indian classical music and culture"
@@ -68,6 +80,8 @@ export function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              {/* UNCOMMENT AFTER ADDING musical_heritage.jpg to /src/assets/images/ */}
+               <img src={musicalHeritageImage} alt="Tagore's Musical Heritage" className="w-full h-48 object-cover rounded-lg mb-6" /> 
               <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Music className="text-amber-600" size={28} />
               </div>
@@ -80,6 +94,8 @@ export function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              {/* UNCOMMENT AFTER ADDING vibrational_sound.jpg to /src/assets/images/ */}
+               <img src={vibrationalSoundImage} alt="Vibrational Sound Experiences" className="w-full h-48 object-cover rounded-lg mb-6" /> 
               <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Heart className="text-amber-600" size={28} />
               </div>
@@ -92,6 +108,8 @@ export function Home() {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              {/* UNCOMMENT AFTER ADDING ai_enhanced.jpg to /src/assets/images/ */}
+              <img src={aiEnhancedImage} alt="AI-Enhanced Music Personalization" className="w-full h-48 object-cover rounded-lg mb-6" /> 
               <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Sparkles className="text-amber-600" size={28} />
               </div>
@@ -155,6 +173,8 @@ export function Home() {
               </div>
             </div>
             <div>
+              {/* UNCOMMENT AFTER ADDING cognitive_enrichment.jpg to /src/assets/images/ */}
+              <img src={cognitiveEnrichmentImage} alt="Cognitive Enrichment & Brain Health" className="w-full h-[500px] object-cover rounded-lg shadow-lg" />                                                   
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1764176269321-6d14f4af09c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Traditional Indian classical music learning session"

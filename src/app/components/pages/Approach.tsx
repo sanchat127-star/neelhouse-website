@@ -1,5 +1,11 @@
 import { Music, Waves, Sparkles, Brain, Globe, Palette, BookOpen, Lightbulb } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
+// UNCOMMENT AFTER ADDING musical_heritage.jpg to /src/assets/images/
+// import musicalHeritageImage from "../../assets/images/musical_heritage.jpg";
+// UNCOMMENT AFTER ADDING vibrational_sound.jpg to /src/assets/images/
+// import vibrationalSoundImage from "../../assets/images/vibrational_sound.jpg";
+// UNCOMMENT AFTER ADDING ai_enhanced.jpg to /src/assets/images/
+// import aiEnhancedImage from "../../assets/images/ai_enhanced.jpg";
 
 export function Approach() {
   return (
@@ -58,6 +64,8 @@ export function Approach() {
               </div>
             </div>
             <div>
+              {/* UNCOMMENT AFTER ADDING musical_heritage.jpg to /src/assets/images/ */}
+              {/* <img src={musicalHeritageImage} alt="Tagore's Musical Heritage" className="w-full h-[400px] object-cover rounded-lg shadow-lg" /> */}
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1764176269321-6d14f4af09c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Indian classical music instruments"
@@ -69,6 +77,8 @@ export function Approach() {
           {/* Element 2 */}
           <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
             <div className="order-2 md:order-1">
+              {/* UNCOMMENT AFTER ADDING vibrational_sound.jpg to /src/assets/images/ */}
+              {/* <img src={vibrationalSoundImage} alt="Vibrational Sound Experiences" className="w-full h-[400px] object-cover rounded-lg shadow-lg" /> */}
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1621789938983-a9543075f0bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpdGF0aW9uJTIwc2luZ2luZyUyMGJvd2xzfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Peaceful meditation and relaxation"
@@ -146,6 +156,8 @@ export function Approach() {
               </div>
             </div>
             <div>
+              {/* UNCOMMENT AFTER ADDING ai_enhanced.jpg to /src/assets/images/ */}
+              {/* <img src={aiEnhancedImage} alt="AI-Enhanced Music Personalization" className="w-full h-[400px] object-cover rounded-lg shadow-lg" /> */}
               <ImageWithFallback
                 src="https://images.unsplash.com/photo-1516110833967-0b5716ca1387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbXVzaWN8ZW58MXx8fHwxNzczNDUxNzk0fDA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="AI-Enhanced Music Technology"
