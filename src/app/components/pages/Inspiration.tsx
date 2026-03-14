@@ -23,7 +23,7 @@ export function Inspiration() {
             <div className="grid md:grid-cols-2 gap-12 items-start mb-8">
               <div>
                 <img
-                  src="https://images.unsplash.com/photo-1583590019912-19cdc55ec80e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWJpbmRyYW5hdGglMjB0YWdvcmUlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzM0NTE3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="/images/rabindranath_tagore.jpg?"
                   alt="Rabindranath Tagore"
                   className="w-full h-[400px] object-cover rounded-lg shadow-lg"
                 />

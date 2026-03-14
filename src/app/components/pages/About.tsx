@@ -151,36 +151,6 @@ export function About() {
               </div>
             </div>
           </div>
-
-          {/* About Rabindranath Tagore Section */}
-          <div className="mt-20">
-            <h2 className="text-3xl mb-8 text-center text-gray-900">About Rabindranath Tagore</h2>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <img 
-                  src="/images/rabindranath_tagore.jpg" 
-                  alt="Rabindranath Tagore" 
-                  className="w-full h-[500px] object-cover rounded-lg shadow-lg" 
-                />
-              </div>
-              <div>
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  Rabindranath Tagore (1861-1941) was a Bengali polymath who reshaped literature and music
-                  of the Indian subcontinent with Contextual Modernism. He became in 1913 the first
-                  non-European to win the Nobel Prize in Literature.
-                </p>
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  Tagore's poetic songs were viewed as spiritual and mercurial; however, his "elegant prose
-                  and magical poetry" remain largely unknown outside Bengal. He composed over 2,000 songs,
-                  now known as Rabindra Sangeet, which form an integral part of Bengali culture.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  His legacy continues to inspire people around the world, bridging cultures and promoting
-                  universal values of humanism, creativity, and emotional expression through the arts.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>

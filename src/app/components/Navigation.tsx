@@ -28,7 +28,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/images/logo.jpg" 
+              src="/images/logo.jpg?" 
               alt="NEEL House Logo" 
               className="h-12 w-12 object-cover rounded-full"
             />

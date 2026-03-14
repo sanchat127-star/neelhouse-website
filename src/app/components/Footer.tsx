@@ -9,7 +9,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src="/images/logo.jpg"
+                src="/images/logo.jpg?"
                 alt="Neelmonilata (NEEL) House"
                 className="h-20 w-auto object-contain rounded-full"
               />

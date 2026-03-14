@@ -1,10 +1,5 @@
 import { Link } from "react-router";
 import { Music, Palette, Heart, Brain, Users, Sparkles } from "lucide-react";
-// import homeImage from "../../../assets/images/home.jpg";
-// import cognitiveEnrichmentImage from "../../../assets/images/cognitive_enrichment.jpg";
-// import musicalHeritageImage from "../../../assets/images/musical_heritage.jpg";
-// import vibrationalSoundImage from "../../../assets/images/vibrational_sound.jpg";
-// import aiEnhancedImage from "../../../assets/images/ai_enhanced.jpg";
 
 export function Home() {
   return (
@@ -13,7 +8,7 @@ export function Home() {
       <section className="relative h-[600px] bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpY3xlbnwxfHx8fDE3NzMzODY2NTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+            src="/images/home.jpg?"
             alt="Where culture meets wellness"
             className="w-full h-full object-cover"
           />
@@ -74,7 +69,7 @@ export function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <img
-                src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpY3xlbnwxfHx8fDE3NzMzODY2NTN8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/musical_heritage.jpg?"
                 alt="Tagore's Musical Heritage"
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
@@ -92,7 +87,7 @@ export function Home() {
 
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <img
-                src="https://images.unsplash.com/photo-1545579833-28c93e4d5083?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpdGF0aW9uJTIwc291bmQlMjBib3dsc3xlbnwxfHx8fDE3NzMzODY2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/vibrational_sound.jpg?"
                 alt="Vibrational Sound Experiences"
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
@@ -110,7 +105,7 @@ export function Home() {
 
             <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
               <img
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMG11c2ljJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzMzODY2NTd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/ai_enhanced.jpg?"
                 alt="AI-Enhanced Music Personalization"
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
@@ -179,7 +174,7 @@ export function Home() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFpbiUyMGhlYWx0aCUyMGNvZ25pdGl2ZXxlbnwxfHx8fDE3NzMzODY2Njd8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="/images/cognitive_enrichment.jpg?"
                 alt="Cognitive Enrichment & Brain Health"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
