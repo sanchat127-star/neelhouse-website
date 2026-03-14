@@ -1,8 +1,8 @@
 import { Music, Waves, Sparkles, Brain, Globe, Palette, BookOpen, Lightbulb } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import musicalHeritageImage from "../src/assets/images/musical_heritage.jpg";
-import vibrationalSoundImage from "../src/assets/images/vibrational_sound.jpg";
-import aiEnhancedImage from "../src/assets/images/ai_enhanced.jpg";
+import musicalHeritageImage from "../../../assets/images/musical_heritage.jpg";
+import vibrationalSoundImage from "../../../assets/images/vibrational_sound.jpg";
+import aiEnhancedImage from "../../../assets/images/ai_enhanced.jpg";
 
 export function Approach() {
   return (
