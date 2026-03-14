@@ -1,11 +1,10 @@
 import { Link } from "react-router";
 import { Music, Palette, Heart, Brain, Users, Sparkles } from "lucide-react";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
-import homeImage from "../../../assets/images/home.jpg";
-import cognitiveEnrichmentImage from "../../../assets/images/cognitive_enrichment.jpg";
-import musicalHeritageImage from "../../../assets/images/musical_heritage.jpg";
-import vibrationalSoundImage from "../../../assets/images/vibrational_sound.jpg";
-import aiEnhancedImage from "../../../assets/images/ai_enhanced.jpg";
+// import homeImage from "../../../assets/images/home.jpg";
+// import cognitiveEnrichmentImage from "../../../assets/images/cognitive_enrichment.jpg";
+// import musicalHeritageImage from "../../../assets/images/musical_heritage.jpg";
+// import vibrationalSoundImage from "../../../assets/images/vibrational_sound.jpg";
+// import aiEnhancedImage from "../../../assets/images/ai_enhanced.jpg";
 
 export function Home() {
   return (
@@ -18,7 +17,7 @@ export function Home() {
             alt="Where culture meets wellness"
             className="w-full h-full object-cover"
           />
-           <img src={homeImage} alt="Where culture meets wellness" className="w-full h-full object-cover" /> 
+          {/* <img src={homeImage} alt="Where culture meets wellness" className="w-full h-full object-cover" /> */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
@@ -79,7 +78,7 @@ export function Home() {
                 alt="Tagore's Musical Heritage"
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
-             <img src={musicalHeritageImage} alt="Tagore's Musical Heritage" className="w-full h-48 object-cover rounded-lg mb-6" /> 
+              {/* <img src={musicalHeritageImage} alt="Tagore's Musical Heritage" className="w-full h-48 object-cover rounded-lg mb-6" /> */}
               <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Music className="text-amber-600" size={28} />
               </div>
@@ -97,7 +96,7 @@ export function Home() {
                 alt="Vibrational Sound Experiences"
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
-               <img src={vibrationalSoundImage} alt="Vibrational Sound Experiences" className="w-full h-48 object-cover rounded-lg mb-6" /> 
+              {/* <img src={vibrationalSoundImage} alt="Vibrational Sound Experiences" className="w-full h-48 object-cover rounded-lg mb-6" /> */}
               <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Heart className="text-amber-600" size={28} />
               </div>
@@ -115,7 +114,7 @@ export function Home() {
                 alt="AI-Enhanced Music Personalization"
                 className="w-full h-48 object-cover rounded-lg mb-6"
               />
-               <img src={aiEnhancedImage} alt="AI-Enhanced Music Personalization" className="w-full h-48 object-cover rounded-lg mb-6" /> 
+              {/* <img src={aiEnhancedImage} alt="AI-Enhanced Music Personalization" className="w-full h-48 object-cover rounded-lg mb-6" /> */}
               <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-6">
                 <Sparkles className="text-amber-600" size={28} />
               </div>
@@ -184,7 +183,7 @@ export function Home() {
                 alt="Cognitive Enrichment & Brain Health"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />
-              <img src={cognitiveEnrichmentImage} alt="Cognitive Enrichment & Brain Health" className="w-full h-[500px] object-cover rounded-lg shadow-lg" /> 
+              {/* <img src={cognitiveEnrichmentImage} alt="Cognitive Enrichment & Brain Health" className="w-full h-[500px] object-cover rounded-lg shadow-lg" /> */}
             </div>
           </div>
         </div>

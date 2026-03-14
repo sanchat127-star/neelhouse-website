@@ -1,5 +1,3 @@
-import rabindranathTagoreImage from "../../../assets/images/rabindranath_tagore.jpg";
-
 export function About() {
   return (
     <div>
@@ -159,8 +157,11 @@ export function About() {
             <h2 className="text-3xl mb-8 text-center text-gray-900">About Rabindranath Tagore</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxSYWJpbmRyYW5hdGglMjBUYWdvcmV8ZW58MXx8fHwxNzMzMzg3MDU1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Rabindranath Tagore" className="w-full h-[500px] object-cover rounded-lg shadow-lg" />
-                <img src={rabindranathTagoreImage} alt="Rabindranath Tagore" className="w-full h-[500px] object-cover rounded-lg shadow-lg" /> 
+                <img 
+                  src="/images/rabindranath_tagore.jpg" 
+                  alt="Rabindranath Tagore" 
+                  className="w-full h-[500px] object-cover rounded-lg shadow-lg" 
+                />
               </div>
               <div>
                 <p className="text-gray-700 mb-4 leading-relaxed">

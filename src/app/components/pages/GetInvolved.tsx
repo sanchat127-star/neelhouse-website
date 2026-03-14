@@ -1,7 +1,6 @@
 import { Heart, Users, DollarSign, Calendar, Mail, MessageSquare } from "lucide-react";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { useState } from "react";
-// import socialImage from "../../../assets/images/Social.jpg";
+// import socialImage from "../../../assets/images/social.jpg";
 
 export function GetInvolved() {
   const [formData, setFormData] = useState({
@@ -186,7 +185,7 @@ export function GetInvolved() {
               </div>
 
               <div className="mt-8">
-                <ImageWithFallback
+                <img
                   src="https://images.unsplash.com/photo-1770097042618-438684ff665f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXRoZXJpbmclMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzMzODc0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Community gathering and support"
                   className="w-full h-[300px] object-cover rounded-lg shadow-lg"

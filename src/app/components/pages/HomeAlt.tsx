@@ -1,6 +1,5 @@
 import { Music, Waves, Sparkles, ArrowRight, Brain } from "lucide-react";
 import { Link } from "react-router";
-import { ImageWithFallback } from "../figma/ImageWithFallback";
 
 export function HomeAlt() {
   return (
@@ -8,7 +7,7 @@ export function HomeAlt() {
       {/* Full-Width Hero with Overlay */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <ImageWithFallback
+          <img
             src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="Community gathering"
             className="w-full h-full object-cover"
@@ -77,7 +76,7 @@ export function HomeAlt() {
             {/* Pillar 1 */}
             <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="h-64 overflow-hidden">
-                <ImageWithFallback
+                <img
                   src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Indian classical music and dance"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -101,7 +100,7 @@ export function HomeAlt() {
             {/* Pillar 2 */}
             <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="h-64 overflow-hidden">
-                <ImageWithFallback
+                <img
                   src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Vibrational sound therapy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -125,7 +124,7 @@ export function HomeAlt() {
             {/* Pillar 3 */}
             <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="h-64 overflow-hidden">
-                <ImageWithFallback
+                <img
                   src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="AI-Enhanced Music Technology"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
@@ -154,7 +153,7 @@ export function HomeAlt() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <ImageWithFallback
+              <img
                 src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Learning and cognitive enrichment"
                 className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
@@ -222,7 +221,7 @@ export function HomeAlt() {
       {/* Call to Action - Full Width */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <ImageWithFallback
+          <img
             src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="Community gathering"
             className="w-full h-full object-cover"
