@@ -1,8 +1,8 @@
 import { Music, Waves, Sparkles, Brain, Globe, Palette, BookOpen, Lightbulb } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
- import musicalHeritageImage from "../../assets/images/musical_heritage.jpg";
- import vibrationalSoundImage from "../../assets/images/vibrational_sound.jpg";
-import aiEnhancedImage from "../../assets/images/ai_enhanced.jpg";
+import musicalHeritageImage from "../../../assets/images/musical_heritage.jpg";
+import vibrationalSoundImage from "../../../assets/images/vibrational_sound.jpg";
+import aiEnhancedImage from "../../../assets/images/ai_enhanced.jpg";
 
 export function Approach() {
   return (
@@ -62,6 +62,7 @@ export function Approach() {
             </div>
             <div>
               <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpY3xlbnwxfHx8fDE3NzMzODY2NTN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Tagore's Musical Heritage" className="w-full h-[400px] object-cover rounded-lg shadow-lg" />
+              <img src={musicalHeritageImage} alt="Tagore's Musical Heritage" className="w-full h-[400px] object-cover rounded-lg shadow-lg" /> 
             </div>
           </div>
 
@@ -69,6 +70,7 @@ export function Approach() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
             <div className="order-2 md:order-1">
               <img src="https://images.unsplash.com/photo-1545579833-28c93e4d5083?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpdGF0aW9uJTIwc291bmQlMjBib3dsc3xlbnwxfHx8fDE3NzMzODY2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Vibrational Sound Experiences" className="w-full h-[400px] object-cover rounded-lg shadow-lg" />
+              {/* <img src={vibrationalSoundImage} alt="Vibrational Sound Experiences" className="w-full h-[400px] object-cover rounded-lg shadow-lg" /> */}
             </div>
             <div className="order-1 md:order-2">
               <div className="flex items-center mb-6">
@@ -142,6 +144,7 @@ export function Approach() {
             </div>
             <div>
               <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxBSSUyMG11c2ljJTIwdGVjaG5vbG9neXxlbnwxfHx8fDE3NzMzODY2NTd8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="AI-Enhanced Music Personalization" className="w-full h-[400px] object-cover rounded-lg shadow-lg" />
+              <img src={aiEnhancedImage} alt="AI-Enhanced Music Personalization" className="w-full h-[400px] object-cover rounded-lg shadow-lg" /> 
             </div>
           </div>
         </div>

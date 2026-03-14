@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import { Mail, Facebook, Instagram, Twitter } from "lucide-react";
-import logo from "../../assets/images/logo.jpg";
+import logo from "../../../assets/images/logo.jpg";
 
 export function Footer() {
   return (
@@ -14,6 +14,7 @@ export function Footer() {
                 alt="Neelmonilata (NEEL) House"
                 className="h-20 w-auto object-contain rounded-full"
               />
+               <img src={logo} alt="Neelmonilata (NEEL) House" className="h-20 w-auto object-contain rounded-full" /> 
               <span className="text-2xl text-white">Neelmonilata (NEEL) House</span>
             </div>
             <p className="text-sm mb-4">
