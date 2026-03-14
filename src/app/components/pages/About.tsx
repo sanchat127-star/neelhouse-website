@@ -1,5 +1,5 @@
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import rabindranathTagoreImage from "../../../assets/images/Rabindranath_tagore.jpg";
+import rabindranathTagoreImage from "src/assets/images/Rabindranath_tagore.jpg";
 
 export function About() {
   return (
