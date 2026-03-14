@@ -1,7 +1,7 @@
 import { Heart, Users, DollarSign, Calendar, Mail, MessageSquare } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { useState } from "react";
-// import socialImage from "../../../assets/images/Social.jpg";
+// import socialImage from "../src/assets/images/Social.jpg";
 
 export function GetInvolved() {
   const [formData, setFormData] = useState({

@@ -1,11 +1,11 @@
 import { Link } from "react-router";
 import { Music, Palette, Heart, Brain, Users, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import homeImage from "src/assets/images/home.jpg";
-import cognitiveEnrichmentImage from "src/assets/images/cognitive_enrichment.jpg";
-import musicalHeritageImage from "src/assets/images/musical_heritage.jpg";
-import vibrationalSoundImage from "src/assets/images/vibrational_sound.jpg";
-import aiEnhancedImage from "src/assets/images/ai_enhanced.jpg";
+import homeImage from "../src/assets/images/home.jpg";
+import cognitiveEnrichmentImage from "../src/assets/images/cognitive_enrichment.jpg";
+import musicalHeritageImage from "../src/assets/images/musical_heritage.jpg";
+import vibrationalSoundImage from "../src/assets/images/vibrational_sound.jpg";
+import aiEnhancedImage from "../src/assets/images/ai_enhanced.jpg";
 
 export function Home() {
   return (
