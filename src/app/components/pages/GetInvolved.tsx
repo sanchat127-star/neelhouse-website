@@ -182,14 +182,6 @@ export function GetInvolved() {
                   </div>
                 </div>
               </div>
-
-              <div className="mt-8">
-                <img
-                  src="/images/community_event.jpg?"
-                  alt="Community gathering and support"
-                  className="w-full h-[300px] object-cover rounded-lg shadow-lg"
-                />
-              </div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
