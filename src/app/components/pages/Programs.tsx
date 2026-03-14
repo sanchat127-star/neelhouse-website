@@ -1,7 +1,5 @@
 import { Music, Palette, Utensils, BookOpen, Users, Languages } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import intergenerationalImage from "figma:asset/d438d2c12d5988c21a87fa31f001cc9574b1f3f3.png";
-import featuredProgramsImage from "figma:asset/58e9fbc721e9336b645096393dfcebe517f5a2cd.png";
 
 export function Programs() {
   const programs = [
@@ -98,7 +96,7 @@ export function Programs() {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ImageWithFallback
-            src={featuredProgramsImage}
+            src="https://images.unsplash.com/photo-1770097042618-438684ff665f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXRoZXJpbmclMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzMzODc0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Community gathering at cultural event"
             className="w-full h-[400px] object-cover rounded-lg shadow-lg"
           />
@@ -184,7 +182,7 @@ export function Programs() {
             </div>
             <div>
               <ImageWithFallback
-                src={intergenerationalImage}
+                src="https://images.unsplash.com/photo-1770097042618-438684ff665f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXRoZXJpbmclMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzMzODc0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Seniors participating in art workshop"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />

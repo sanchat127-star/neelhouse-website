@@ -1,5 +1,4 @@
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import tagoreImage from "figma:asset/92d86cfaed8332bee08efc9a50eac4b77bfa935a.png";
 
 export function Inspiration() {
   return (
@@ -26,7 +25,7 @@ export function Inspiration() {
             <div className="grid md:grid-cols-2 gap-12 items-start mb-8">
               <div>
                 <ImageWithFallback
-                  src={tagoreImage}
+                  src="https://images.unsplash.com/photo-1583590019912-19cdc55ec80e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyYWJpbmRyYW5hdGglMjB0YWdvcmUlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzM0NTE3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Rabindranath Tagore"
                   className="w-full h-[400px] object-cover rounded-lg shadow-lg"
                 />

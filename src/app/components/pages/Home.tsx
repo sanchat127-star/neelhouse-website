@@ -1,8 +1,6 @@
 import { Link } from "react-router";
 import { Music, Palette, Heart, Brain, Users, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import heroBackground from "figma:asset/58533bb16b8a180efd60593c7c1b6298224f431f.png";
-import musicLearningImage from "figma:asset/df28386b3c55a043b29becd85fbba18e5401a152.png";
 
 export function Home() {
   return (
@@ -11,7 +9,7 @@ export function Home() {
       <section className="relative h-[600px] bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="absolute inset-0">
           <img
-            src={heroBackground}
+            src="https://images.unsplash.com/photo-1764176269321-6d14f4af09c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Indian classical music and culture"
             className="w-full h-full object-cover"
           />
@@ -158,7 +156,7 @@ export function Home() {
             </div>
             <div>
               <ImageWithFallback
-                src={musicLearningImage}
+                src="https://images.unsplash.com/photo-1764176269321-6d14f4af09c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Traditional Indian classical music learning session"
                 className="w-full h-[500px] object-cover rounded-lg shadow-lg"
               />

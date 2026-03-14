@@ -1,11 +1,6 @@
-import { Music, Heart, Sparkles, Brain, ArrowRight, Play } from "lucide-react";
+import { Music, Waves, Sparkles, ArrowRight, Brain } from "lucide-react";
 import { Link } from "react-router";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import heroImage from "figma:asset/58533bb16b8a180efd60593c7c1b6298224f431f.png";
-import cognitiveImage from "figma:asset/df28386b3c55a043b29becd85fbba18e5401a152.png";
-import soundTherapyImage from "figma:asset/a2fe01a225863016f08f3f72ffe6f196b8957592.png";
-import tagoreHeritageImage from "figma:asset/8486d6ee4124a043520bdda4838d0a5ca2846140.png";
-import aiMusicImage from "figma:asset/6b10b2a13e8945e4614919c016c31615aaebb550.png";
 
 export function HomeAlt() {
   return (
@@ -14,8 +9,8 @@ export function HomeAlt() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <ImageWithFallback
-            src={heroImage}
-            alt="Traditional Indian musical instruments"
+            src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            alt="Community gathering"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
@@ -83,7 +78,7 @@ export function HomeAlt() {
             <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="h-64 overflow-hidden">
                 <ImageWithFallback
-                  src={tagoreHeritageImage}
+                  src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Indian classical music and dance"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -107,14 +102,14 @@ export function HomeAlt() {
             <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="h-64 overflow-hidden">
                 <ImageWithFallback
-                  src={soundTherapyImage}
+                  src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="Vibrational sound therapy"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
               <div className="p-8">
                 <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-                  <Heart className="text-amber-600" size={28} />
+                  <Waves className="text-amber-600" size={28} />
                 </div>
                 <h3 className="text-2xl mb-3 text-gray-900">Vibrational Sound Experiences</h3>
                 <p className="text-gray-600 mb-4">
@@ -131,7 +126,7 @@ export function HomeAlt() {
             <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="h-64 overflow-hidden">
                 <ImageWithFallback
-                  src={aiMusicImage}
+                  src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                   alt="AI-Enhanced Music Technology"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -160,7 +155,7 @@ export function HomeAlt() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <ImageWithFallback
-                src={cognitiveImage}
+                src="https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBkYW5jZSUyMHBlcmZvcm1hbmNlJTIwY29sb3JmdWx8ZW58MXx8fHwxNzcyODQ4MzgxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                 alt="Learning and cognitive enrichment"
                 className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
               />

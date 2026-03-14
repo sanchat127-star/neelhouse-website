@@ -1,5 +1,4 @@
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import tagoreImage from "figma:asset/92d86cfaed8332bee08efc9a50eac4b77bfa935a.png";
 
 export function About() {
   return (

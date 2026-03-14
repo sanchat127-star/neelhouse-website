@@ -1,7 +1,6 @@
-import { Mail, Users, Heart, Calendar, DollarSign, Share2 } from "lucide-react";
+import { Heart, Users, DollarSign, Calendar, Mail, MessageSquare } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { useState } from "react";
-import communityImage from "figma:asset/dc94dd2d4f5ffbd04be9d38d1b73e12bfb8714de.png";
 
 export function GetInvolved() {
   const [formData, setFormData] = useState({
@@ -109,7 +108,7 @@ export function GetInvolved() {
 
             <div className="bg-white border border-gray-200 rounded-lg p-8 hover:shadow-lg transition-shadow">
               <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-                <Share2 className="text-amber-600" size={28} />
+                <MessageSquare className="text-amber-600" size={28} />
               </div>
               <h3 className="text-xl mb-3 text-gray-900">Spread the Word</h3>
               <p className="text-gray-600 mb-4">
@@ -185,7 +184,7 @@ export function GetInvolved() {
 
               <div className="mt-8">
                 <ImageWithFallback
-                  src={communityImage}
+                  src="https://images.unsplash.com/photo-1770097042618-438684ff665f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXRoZXJpbmclMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzMzODc0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
                   alt="Community gathering and support"
                   className="w-full h-[300px] object-cover rounded-lg shadow-lg"
                 />

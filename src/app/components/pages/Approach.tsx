@@ -1,8 +1,5 @@
 import { Music, Waves, Sparkles, Brain, Globe, Palette, BookOpen, Lightbulb } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-import soundTherapyImage from "figma:asset/a2fe01a225863016f08f3f72ffe6f196b8957592.png";
-import tagoreHeritageImage from "figma:asset/8486d6ee4124a043520bdda4838d0a5ca2846140.png";
-import aiMusicImage from "figma:asset/6b10b2a13e8945e4614919c016c31615aaebb550.png";
 
 export function Approach() {
   return (
@@ -62,7 +59,7 @@ export function Approach() {
             </div>
             <div>
               <ImageWithFallback
-                src={tagoreHeritageImage}
+                src="https://images.unsplash.com/photo-1764176269321-6d14f4af09c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Indian classical music instruments"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />
@@ -73,7 +70,7 @@ export function Approach() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-24">
             <div className="order-2 md:order-1">
               <ImageWithFallback
-                src={soundTherapyImage}
+                src="https://images.unsplash.com/photo-1621789938983-a9543075f0bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpdGF0aW9uJTIwc2luZ2luZyUyMGJvd2xzfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Peaceful meditation and relaxation"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />
@@ -150,7 +147,7 @@ export function Approach() {
             </div>
             <div>
               <ImageWithFallback
-                src={aiMusicImage}
+                src="https://images.unsplash.com/photo-1516110833967-0b5716ca1387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwbXVzaWN8ZW58MXx8fHwxNzczNDUxNzk0fDA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="AI-Enhanced Music Technology"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />

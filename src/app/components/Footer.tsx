@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import { Mail, Facebook, Instagram, Twitter } from "lucide-react";
-import logo from "figma:asset/e83e3c956a45004e0d185ec18ebe134bf1512709.png";
 
 export function Footer() {
   return (
@@ -10,7 +9,7 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img
-                src={logo}
+                src="https://images.unsplash.com/photo-1758073691543-32112f23cea2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibHVlJTIwbG90dXMlMjBmbG93ZXIlMjBtaW5pbWFsfGVufDF8fHx8MTc3MzQ1MTc5Nnww&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Neelmonilata (NEEL) House"
                 className="h-20 w-auto object-contain"
               />

@@ -1,10 +1,8 @@
-import { Link, useLocation } from "react-router";
+import { Link } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "figma:asset/e83e3c956a45004e0d185ec18ebe134bf1512709.png";
 
 export function Navigation() {
-  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -29,11 +27,6 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3">
-            <img
-              src={logo}
-              alt="Neelmonilata (NEEL) House"
-              className="h-20 w-auto object-contain"
-            />
             <span className="text-2xl text-gray-900">Neelmonilata (NEEL) House</span>
           </Link>
 
