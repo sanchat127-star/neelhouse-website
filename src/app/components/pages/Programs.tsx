@@ -1,8 +1,6 @@
 import { Music, Palette, Utensils, BookOpen, Users, Languages } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-// UNCOMMENT AFTER ADDING programs.jpg to /src/assets/images/
 // import programsImage from "../../assets/images/programs.jpg";
-// UNCOMMENT AFTER ADDING community_event.jpg to /src/assets/images/
 // import communityEventImage from "../../assets/images/community_event.jpg";
 
 export function Programs() {
@@ -99,13 +97,7 @@ export function Programs() {
       {/* Featured Image */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* UNCOMMENT AFTER ADDING programs.jpg to /src/assets/images/ */}
-          {/* <img src={programsImage} alt="Our Programs" className="w-full h-[400px] object-cover rounded-lg shadow-lg" /> */}
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1770097042618-438684ff665f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXRoZXJpbmclMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzMzODc0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-            alt="Community gathering at cultural event"
-            className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-          />
+          <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxJbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpY3xlbnwxfHx8fDE3NzMzODY2NTN8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Our Programs" className="w-full h-[400px] object-cover rounded-lg shadow-lg" />
         </div>
       </section>
 
@@ -187,13 +179,7 @@ export function Programs() {
               </div>
             </div>
             <div>
-              {/* UNCOMMENT AFTER ADDING community_event.jpg to /src/assets/images/ */}
-              {/* <img src={communityEventImage} alt="Intergenerational Community Events" className="w-full h-[400px] object-cover rounded-lg shadow-lg" /> */}
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1770097042618-438684ff665f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXRoZXJpbmclMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzMzODc0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="Seniors participating in art workshop"
-                className="w-full h-[400px] object-cover rounded-lg shadow-lg"
-              />
+              <img src="https://images.unsplash.com/photo-1770097042618-438684ff665f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXRoZXJpbmclMjBjZWxlYnJhdGlvbnxlbnwxfHx8fDE3NzMzODc0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Intergenerational Community Events" className="w-full h-[400px] object-cover rounded-lg shadow-lg" />
             </div>
           </div>
         </div>

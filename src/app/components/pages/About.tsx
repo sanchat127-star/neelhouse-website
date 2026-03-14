@@ -1,5 +1,4 @@
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-// UNCOMMENT AFTER ADDING Rabindranath_tagore.jpg to /src/assets/images/
 // import rabindranathTagoreImage from "../../assets/images/Rabindranath_tagore.jpg";
 
 export function About() {
@@ -161,13 +160,7 @@ export function About() {
             <h2 className="text-3xl mb-8 text-center text-gray-900">About Rabindranath Tagore</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                {/* UNCOMMENT AFTER ADDING Rabindranath_tagore.jpg to /src/assets/images/ */}
-                {/* <img src={rabindranathTagoreImage} alt="Rabindranath Tagore" className="w-full h-[500px] object-cover rounded-lg shadow-lg" /> */}
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1764176269321-6d14f4af09c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBjbGFzc2ljYWwlMjBtdXNpYyUyMHBlcmZvcm1hbmNlfGVufDF8fHx8MTc3MzQ1MTc5Mnww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Rabindranath Tagore - Nobel Laureate"
-                  className="w-full h-[500px] object-cover rounded-lg shadow-lg"
-                />
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxSYWJpbmRyYW5hdGglMjBUYWdvcmV8ZW58MXx8fHwxNzMzMzg3MDU1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Rabindranath Tagore" className="w-full h-[500px] object-cover rounded-lg shadow-lg" />
               </div>
               <div>
                 <p className="text-gray-700 mb-4 leading-relaxed">

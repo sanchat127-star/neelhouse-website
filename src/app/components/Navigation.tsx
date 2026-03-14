@@ -1,8 +1,7 @@
 import { Link } from "react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-// UNCOMMENT AFTER ADDING logo.jpg to /src/assets/images/
-import logo from "../../assets/images/logo.jpg";
+// import logo from "../../assets/images/logo.jpg";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,8 +28,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3">
-            {/* UNCOMMENT AFTER ADDING logo.jpg to /src/assets/images/ */}
-             <img src={logo} alt="Neelmonilata (NEEL) House" className="h-16 w-16 object-contain" /> 
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="Neelmonilata (NEEL) House" className="h-16 w-16 object-contain rounded-full" />
             <span className="text-2xl text-gray-900">Neelmonilata (NEEL) House</span>
           </Link>
 

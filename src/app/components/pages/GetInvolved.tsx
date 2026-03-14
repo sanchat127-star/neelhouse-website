@@ -1,7 +1,6 @@
 import { Heart, Users, DollarSign, Calendar, Mail, MessageSquare } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import { useState } from "react";
-// UNCOMMENT AFTER ADDING Social.jpg to /src/assets/images/
 // import socialImage from "../../assets/images/Social.jpg";
 
 export function GetInvolved() {
@@ -158,8 +157,7 @@ export function GetInvolved() {
 
                 <div>
                   <h3 className="text-lg mb-2 text-gray-900">Follow Us</h3>
-                  {/* UNCOMMENT AFTER ADDING Social.jpg to /src/assets/images/ */}
-                  {/* <img src={socialImage} alt="Follow Us on Social Media" className="w-full h-[200px] object-cover rounded-lg shadow-lg mb-4" /> */}
+                  <img src="https://images.unsplash.com/photo-1611262588019-db6cc2032da3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGNvbW11bml0eXxlbnwxfHx8fDE3NzMzODc1MDh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Follow Us on Social Media" className="w-full h-[200px] object-cover rounded-lg shadow-lg mb-4" />
                   <p className="text-gray-600 mb-3">
                     Stay updated on our latest programs and events:
                   </p>
