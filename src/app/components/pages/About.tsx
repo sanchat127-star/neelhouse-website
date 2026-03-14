@@ -1,4 +1,3 @@
-import { ImageWithFallback } from "../figma/ImageWithFallback";
 import rabindranathTagoreImage from "../../../assets/images/rabindranath_tagore.jpg";
 
 export function About() {
