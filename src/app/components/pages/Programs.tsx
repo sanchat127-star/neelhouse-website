@@ -1,7 +1,7 @@
 import { Music, Palette, Utensils, BookOpen, Users, Languages } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
-// import programsImage from "../../assets/images/programs.jpg";
-// import communityEventImage from "../../assets/images/community_event.jpg";
+ import programsImage from "../../assets/images/programs.jpg";
+ import communityEventImage from "../../assets/images/community_event.jpg";
 
 export function Programs() {
   const programs = [
