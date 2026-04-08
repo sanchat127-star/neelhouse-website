@@ -171,6 +171,9 @@ export function Quiz() {
   };
 
   const handleNext = () => {
+    // Scroll to top of page when moving to next question
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
     if (currentQuestion < quizQuestions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setSelectedAnswer(null);
@@ -181,6 +184,9 @@ export function Quiz() {
   };
 
   const handleRestart = () => {
+    // Scroll to top when restarting quiz
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
     setCurrentQuestion(0);
     setSelectedAnswer(null);
     setShowStory(false);

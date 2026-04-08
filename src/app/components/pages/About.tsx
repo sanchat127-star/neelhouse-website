@@ -52,7 +52,7 @@ export function About() {
           </div>
 
           {/* Values */}
-          <div>
+          <div className="mb-20">
             <h2 className="text-3xl mb-12 text-center text-gray-900">Our Values</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
@@ -97,8 +97,23 @@ export function About() {
             </div>
           </div>
 
+          {/* Leadership Link */}
+          <div className="mb-20 bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-12 text-center">
+            <h2 className="text-3xl mb-4 text-gray-900">Meet Our Leadership Team</h2>
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+              Our dedicated team of leaders brings together diverse expertise in technology, 
+              arts, finance, and organizational management to guide NEEL House's mission.
+            </p>
+            <a
+              href="/leadership"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-lg hover:from-amber-600 hover:to-orange-700 transition-all shadow-lg text-lg"
+            >
+              Meet Our Leadership →
+            </a>
+          </div>
+
           {/* Non-Profit Status */}
-          <div className="mt-20 bg-white border-2 border-amber-200 rounded-lg p-8 md:p-12">
+          <div className="bg-white border-2 border-amber-200 rounded-lg p-8 md:p-12">
             <div className="max-w-4xl mx-auto">
               <div className="flex items-start mb-6">
                 <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
@@ -107,24 +122,23 @@ export function About() {
                 <div>
                   <h2 className="text-3xl mb-4 text-gray-900">Non-Profit Organization</h2>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    Neelmonilata (NEEL) House is a registered non-profit organization dedicated to serving
-                    the public benefit through arts, culture, and wellness programs. We have applied for
-                    501(c)(3) tax-exempt status with the Internal Revenue Service (IRS).
+                    Neelmonilata (NEEL) House is a registered 501(c)(3) tax-exempt non-profit organization 
+                    dedicated to serving the public benefit through arts, culture, and wellness programs.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    <strong>EIN:</strong> 41-4493101
                   </p>
                 </div>
               </div>
               
               <div className="bg-amber-50 rounded-lg p-6 mb-6">
-                <h3 className="text-xl mb-3 text-gray-900">Tax-Exempt Status Pending</h3>
+                <h3 className="text-xl mb-3 text-gray-900">Tax-Deductible Contributions</h3>
                 <p className="text-gray-700 leading-relaxed mb-3">
-                  Our application for federal tax-exempt status under Section 501(c)(3) of the Internal
-                  Revenue Code is currently pending with the IRS. Once approved, NEEL House will be
-                  recognized as a charitable organization, and contributions may be tax-deductible to
-                  the extent permitted by law.
+                  NEEL House is exempt from federal income tax under Section 501(c)(3) of the Internal
+                  Revenue Code. Contributions to NEEL House are tax-deductible to the extent permitted by law.
                 </p>
                 <p className="text-gray-600 text-sm italic">
-                  Please consult with your tax advisor regarding the deductibility of any donations
-                  made before our 501(c)(3) status is finalized.
+                  Please consult with your tax advisor regarding the deductibility of your donations.
                 </p>
               </div>
 
