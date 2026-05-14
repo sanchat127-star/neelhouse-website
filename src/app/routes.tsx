@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import { Root } from "./components/Root";
 import { Home } from "./components/pages/Home";
 import { HomeAlt } from "./components/pages/HomeAlt";
+import { HomeModern } from "./components/pages/HomeModern";
 import { About } from "./components/pages/About";
 import { Leadership } from "./components/pages/Leadership";
 import { Inspiration } from "./components/pages/Inspiration";
@@ -13,6 +14,7 @@ import { ExperienceLegacy } from "./components/pages/ExperienceLegacy";
 import { ExploreRaag } from "./components/pages/ExploreRaag";
 import { Raag } from "./components/pages/Raag";
 import { Quiz } from "./components/pages/Quiz";
+import { Books } from "./components/pages/Books";
 import { Deployment } from "./components/pages/Deployment";
 import { NotFound } from "./components/pages/NotFound";
 
@@ -28,6 +30,7 @@ export const router = createBrowserRouter([
       { path: "programs", Component: Programs },
       { path: "approach", Component: Approach },
       { path: "quiz", Component: Quiz },
+      { path: "books", Component: Books },
       { path: "get-involved", Component: GetInvolved },
       { path: "explore-learning", Component: ExploreLearning },
       { path: "experience-legacy", Component: ExperienceLegacy },

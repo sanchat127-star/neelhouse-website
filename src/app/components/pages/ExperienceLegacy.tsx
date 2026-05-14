@@ -1,5 +1,5 @@
-import { Music, Play, BookOpen, Heart, Headphones, Video } from "lucide-react";
-import { useRef, useEffect, useState } from "react";
+import { Music, Play, BookOpen, Heart, Headphones, Video, Film, Award } from "lucide-react";
+import { useRef, useEffect, useState, useMemo } from "react";
 
 interface MediaItem {
   title: string;
@@ -91,6 +91,41 @@ const mediaItems: MediaItem[] = [
     type: "youtube",
     youtubeId: "6wQYEtjRjPo",
     category: "Devotional"
+  },
+  {
+    title: "Rabindra Sangeet Performance",
+    artist: "Musical Performance",
+    description: "A beautiful rendition of Rabindra Sangeet that captures the essence and emotional depth of Tagore's musical legacy. This performance showcases the timeless appeal of his compositions.",
+    type: "youtube",
+    youtubeId: "crGwlHruS08",
+    category: "Rabindra Sangeet"
+  },
+  {
+    title: "Rabindra Sangeet Performance",
+    artist: "Performed by Maya Sen",
+    description: "A captivating rendition of Rabindra Sangeet by Maya Sen. This performance beautifully captures the emotional depth and lyrical beauty of Tagore's compositions, offering listeners a profound musical experience.",
+    type: "youtube",
+    youtubeId: "kgsApx8OSWY",
+    category: "Rabindra Sangeet"
+  }
+];
+
+const satyajitRayItems: MediaItem[] = [
+  {
+    title: "Satyajit Ray Film Music",
+    artist: "Composed by Satyajit Ray",
+    description: "An extraordinary musical composition by Academy Award winner Satyajit Ray. Having studied at Shantiniketan, Ray absorbed Tagore's artistic philosophy and created innovative fusion music that blended Indian classical traditions with Western orchestration, revolutionizing film music in Indian cinema.",
+    type: "youtube",
+    youtubeId: "Stw6ml85VTs",
+    category: "Cinematic Fusion"
+  },
+  {
+    title: "Satyajit Ray Film Music",
+    artist: "Composed by Satyajit Ray",
+    description: "Another masterpiece showcasing Satyajit Ray's genius in musical composition. His Shantiniketan education under Tagore's influence shaped his unique approach to creating evocative soundscapes that perfectly captured the emotional essence of his cinematic storytelling.",
+    type: "youtube",
+    youtubeId: "lLgFo1_yKW4",
+    category: "Cinematic Fusion"
   }
 ];
 
@@ -98,7 +133,10 @@ export function ExperienceLegacy() {
   const audioRefs = useRef<(HTMLAudioElement | null)[]>([]);
   const youtubeRefs = useRef<any[]>([]);
   const [ytApiReady, setYtApiReady] = useState(false);
-  
+
+  // Combine all media items for unified media control - memoized to prevent recreation
+  const allMediaItems = useMemo(() => [...mediaItems, ...satyajitRayItems], []);
+
   useEffect(() => {
     // Load YouTube IFrame API
     const tag = document.createElement('script');
@@ -124,8 +162,8 @@ export function ExperienceLegacy() {
   useEffect(() => {
     if (!ytApiReady) return;
 
-    // Initialize YouTube players
-    mediaItems.forEach((item, index) => {
+    // Initialize YouTube players for all media items
+    allMediaItems.forEach((item, index) => {
       if (item.type === 'youtube') {
         const player = new (window as any).YT.Player(`youtube-player-${index}`, {
           events: {
@@ -140,7 +178,7 @@ export function ExperienceLegacy() {
         youtubeRefs.current[index] = player;
       }
     });
-  }, [ytApiReady]);
+  }, [ytApiReady, allMediaItems]);
 
   const handleMediaPlay = (playingIndex: number) => {
     // Pause all audio elements except the one playing
@@ -158,23 +196,10 @@ export function ExperienceLegacy() {
     });
   };
 
-  useEffect(() => {
-    // Add play event listeners to audio elements
-    audioRefs.current.forEach((audio, index) => {
-      if (audio) {
-        const playListener = () => handleMediaPlay(index);
-        audio.addEventListener('play', playListener);
-      }
-    });
-
-    return () => {
-      audioRefs.current.forEach((audio) => {
-        if (audio) {
-          audio.removeEventListener('play', () => {});
-        }
-      });
-    };
-  }, []);
+  // Audio play handler - attached via onPlay event in JSX instead of useEffect
+  const handleAudioPlay = (index: number) => {
+    handleMediaPlay(index);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
@@ -195,7 +220,7 @@ export function ExperienceLegacy() {
         </div>
       </section>
 
-      {/* Media Players Section */}
+      {/* Media Players Section - Rabindra Sangeet */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="space-y-8">
@@ -238,6 +263,7 @@ export function ExperienceLegacy() {
                         controls
                         className="w-full"
                         preload="metadata"
+                        onPlay={() => handleAudioPlay(index)}
                         style={{
                           height: '54px',
                           borderRadius: '8px'
@@ -276,6 +302,83 @@ export function ExperienceLegacy() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Satyajit Ray Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white/50">
+        <div className="max-w-5xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 rounded-full mb-4">
+              <Award className="text-purple-600" size={20} />
+              <span className="text-purple-800 font-medium">Academy Award Winner</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">
+              Satyajit Ray: Tagore's Musical Legacy in Cinema
+            </h2>
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              Academy Award-winning filmmaker Satyajit Ray studied at <span className="text-purple-600 font-medium">Shantiniketan</span>,
+              Rabindranath Tagore's visionary university. There, he absorbed Tagore's artistic philosophy
+              and created extraordinary fusion music that revolutionized Indian cinema—blending classical
+              Indian traditions with Western orchestration in ways that had never been heard before.
+            </p>
+          </div>
+
+          {/* Satyajit Ray Media Items */}
+          <div className="space-y-8">
+            {satyajitRayItems.map((item, rayIndex) => {
+              const globalIndex = mediaItems.length + rayIndex;
+              return (
+                <div
+                  key={`ray-${rayIndex}`}
+                  className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-purple-200"
+                >
+                  <div className="p-8 md:p-10">
+                    {/* Header */}
+                    <div className="flex items-start gap-4 mb-6">
+                      <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                        <Film className="text-white" size={28} />
+                      </div>
+                      <div className="flex-1">
+                        <div className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium mb-2">
+                          {item.category}
+                        </div>
+                        <h3 className="text-3xl mb-2 text-gray-900">{item.title}</h3>
+                        <p className="text-lg text-purple-600 font-medium">{item.artist}</p>
+                      </div>
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+                      {item.description}
+                    </p>
+
+                    {/* Media Player */}
+                    <div className="bg-gradient-to-r from-purple-50 to-indigo-50 rounded-lg p-4">
+                      <div className="aspect-video w-full">
+                        <iframe
+                          id={`youtube-player-${globalIndex}`}
+                          width="100%"
+                          height="100%"
+                          src={`https://www.youtube.com/embed/${item.youtubeId}?enablejsapi=1`}
+                          title={item.title}
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                          className="rounded-lg"
+                        ></iframe>
+                      </div>
+                      <div className="mt-4 flex items-center gap-2 text-sm text-gray-600">
+                        <Play size={16} className="text-purple-600" />
+                        <span>Click to watch on YouTube</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

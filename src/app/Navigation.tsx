@@ -14,6 +14,7 @@ export function Navigation() {
     { name: "Our Approach", path: "/approach" },
     { name: "Programs", path: "/programs" },
     { name: "Quiz", path: "/quiz" },
+    { name: "Books", path: "/books" },
     { name: "Get Involved", path: "/get-involved" },
     { name: "Rabindra Learning Hub", path: "/explore-learning" },
     { name: "Rabindra Mosaic", path: "/experience-legacy" },
