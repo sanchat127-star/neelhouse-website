@@ -15,6 +15,8 @@ import { ExploreRaag } from "./components/pages/ExploreRaag";
 import { Raag } from "./components/pages/Raag";
 import { Quiz } from "./components/pages/Quiz";
 import { Books } from "./components/pages/Books";
+import { Donate } from "./components/pages/Donate";
+import { DomainVerification } from "./components/pages/DomainVerification";
 import { Deployment } from "./components/pages/Deployment";
 import { NotFound } from "./components/pages/NotFound";
 
@@ -31,7 +33,9 @@ export const router = createBrowserRouter([
       { path: "approach", Component: Approach },
       { path: "quiz", Component: Quiz },
       { path: "books", Component: Books },
+      { path: "donate", Component: Donate },
       { path: "get-involved", Component: GetInvolved },
+      { path: "domain-verification", Component: DomainVerification },
       { path: "explore-learning", Component: ExploreLearning },
       { path: "experience-legacy", Component: ExperienceLegacy },
       { path: "explore-raag", Component: ExploreRaag },

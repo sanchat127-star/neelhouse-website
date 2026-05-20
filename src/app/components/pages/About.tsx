@@ -162,6 +162,18 @@ export function About() {
                     life-enriching programs to diverse populations across the United States.
                   </p>
                 </div>
+
+                <div className="mt-6 pt-6 border-t border-amber-200">
+                  <p className="text-sm text-gray-600 mb-3">
+                    For domain verification and official organization information:
+                  </p>
+                  <a
+                    href="/domain-verification"
+                    className="inline-flex items-center text-amber-600 hover:text-amber-700 underline"
+                  >
+                    View Domain Verification Page →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
