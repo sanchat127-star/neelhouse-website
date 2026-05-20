@@ -30,7 +30,7 @@ export function Navigation() {
 
   return (
     <nav className="bg-slate-600 border-b border-slate-500 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full mx-auto px-2 sm:px-4 lg:px-6">
         {/* Logo centered at top */}
         <div className="flex justify-center items-center py-4 border-b border-slate-500">
           <Link to="/" className="flex items-center space-x-3">
@@ -46,12 +46,12 @@ export function Navigation() {
         {/* Navigation items */}
         <div className="flex justify-between items-center h-16">
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex justify-center items-center w-full space-x-6">
+          <div className="hidden lg:flex justify-center items-center w-full space-x-2">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-3 py-2 text-sm transition-colors whitespace-nowrap ${
+                className={`px-2 py-2 text-sm transition-colors whitespace-nowrap ${
                   isActive(item.path)
                     ? "text-amber-500 border-b-2 border-amber-500"
                     : "text-gray-300 hover:text-amber-500"
