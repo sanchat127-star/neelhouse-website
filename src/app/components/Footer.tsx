@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Mail, Facebook, Instagram, Twitter } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -20,27 +20,6 @@ export function Footer() {
               culture inspired by the legacy of Nobel Laureate Rabindranath Tagore.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-amber-500 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-amber-500 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-amber-500 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
-              </a>
               <a
                 href="mailto:info@neelhouse.org"
                 className="text-gray-400 hover:text-amber-500 transition-colors"
